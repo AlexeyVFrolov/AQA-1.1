@@ -1,20 +1,20 @@
 package ru.netology.service;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CashbackHackServiceTest {
+class CashbackHackServiceJupiterTest {
 
     @Test
-    public void shouldRemainWhenBelowBoundary() {
+    void shouldRemainWhenBelowBoundary() {
         CashbackHackService cashbackHackService = new CashbackHackService();
 
         assertEquals(cashbackHackService.remain(1500), 500);
     }
 
     @Test
-    public void shouldRemainWhenBoundary() {
+    void shouldRemainWhenBoundary() {
         CashbackHackService cashbackHackService = new CashbackHackService();
 
         assertEquals(cashbackHackService.remain(3000), 0);
