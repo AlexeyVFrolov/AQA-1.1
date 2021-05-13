@@ -11,13 +11,13 @@ class CashbackHackServiceJupiterTest {
     void shouldRemainWhenBelowBoundary() {
         CashbackHackService cashbackHackService = new CashbackHackService();
 
-        assertEquals(cashbackHackService.remain(1500), 500);
+        assertEquals(500, cashbackHackService.remain(1500));
     }
 
     @Test
     void shouldRemainWhenBoundary() {
         CashbackHackService cashbackHackService = new CashbackHackService();
 
-        assertEquals(cashbackHackService.remain(3000), 0);
+        assertEquals(0, cashbackHackService.remain(3000));
     }
 }
